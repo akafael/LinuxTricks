@@ -1,0 +1,207 @@
+
+ACRESCENTEM SEMPRE QUE DESCOBRIR ALGO MANEIRO
+Lista de comandos úteis para Unix:
+//-----------------------------------
+copiar arquivos:
+	cp origem destino
+//-----------------------------------
+mover:
+	mv origem destino
+//-----------------------------------
+remover:
+	rm 
+		-*.eps : para remover todos os .eps da pasta
+//-----------------------------------
+mudar permissõa p/ executavel:[usado para criar shell script's]
+	chmod +x arquivo
+		 u+x ou 755
+//-----------------------------------
+criar pasta:
+	mkdir
+//-----------------------------------
+aonde estamos:
+	pwd
+//-----------------------------------
+o que tem na pasta:
+	ls
+	ls -a : para ver tbm os arquivos ocultos
+	*arquivos com o nome iciados por potno '.' so ocultos
+//-----------------------------------
+criar arquivo:
+	por exemplo: gedit unix_comandos.txt
+//-----------------------------------
+
+instalar programa de repositórios:
+	sudo apt-get install programa
+//-----------------------------------
+
+auto-completar:
+		tab 
+//-----------------------------------
+
+montar .iso:
+
+	mount -o loop /diretorio/do/arquivo.iso /diretorio/da/montagem
+
+//-----------------------------------
+
+mudar de diretorio: cd destino
+	- para a pasta anteriormente visitada cd --
+	- para a pasta 1 nivel de origem: cd ..
+	- ~/ : /home/juarez
+	-./ : apartir da pasta original
+
+//-----------------------------------
+
+pastas interessantes:
+	- um shell script na pasta /usr/bin pode ser rodado de qualquer pasta
+	- uma biblioteca que esteja em /usr/local/include pode ser incluida num código com #include<>
+
+//----------------------------------
+
+para exibir arquivos escondidos em uma pasta: ctrl + h
+
+//-----------------------------------
+
+para criar pastas e arquivos em lugares que incialmente não se pode: repita o comando antecedido de sudo [da permissão de adm]
+
+//-----------------------------------
+
+descompactar :
+	zip:		gunzip nomedoarquivo.zip
+
+	rar:		unrar x nomedoarquivo.rar
+
+	tar:		tar -xvf nomedoarquivo.tar
+
+	tar.gz:		tar -vzxf nomedoarquivo.tar.gz
+
+	bz2:		bunzip nomedoarquivo.bz2
+
+	tar.bz2:	tar -jxvf nomedoarquivo.tar.bz2 
+//-----------------------------------
+criando link entre arquivos:
+	ln -s /file /link
+	como usar:
+		-coloque o programa em um diretorio qualquer
+		-use $PATH	 para descobrir os dirétórios aonde o terminal procura 
+		-saça ln -s /caminho/para/file /caminho/do/path/nome_do_programa
+		-em geral podemos usar: /usr/local/bin ou sbin...
+		-assim basta digitar nome_do_programa para que ele abra em qq terminal
+		
+//-----------------------------------
+
+abrit terminal: ctrl + alt + t
+abrir aba de terminal: ctrl + shift + t
+
+//---------------------------------
+caso você tenha de instalar um arquivo .bin:
+        - mude a permissão para executavel
+        - execute
+
+//------------------------------------
+editor de texto bolado para se usar no terminal
+	vim
+	você pode editr direto do terminal
+	serve para se achar likeaboss
+*estou editando apartir dele
+
+//------------------------------------
+diretórios:
+  .:atual
+  ~:diretório do usuário
+  -: diretório último visitado
+  ..: diretório superior[em ordem de hierarquia
+
+//------------------------------------
+PATH: indica em quais diretório procura-se por comandos.
+
+'O aviso de comando do usuário root é identificado por uma “#” (tralha), e o aviso de comando
+de usuários é identificado pelo símbolo “$”. Isto é padrão em sistemas UNIX.''
+
+//------------------------------------
+CORINGAS: *, ?, [], {}
+exemplo:
+	rm *.eps: remove qualquer coisa terminada em '.eps'
+	ls Image_1?.jpeg: mostra os arquivos Image_1x onde x pode ser qq coisa
+	ls Image_[0-9][0-2].jpeg: lista todos os arquivos Image_XY com x e y variando no intervalo
+	mkdir teste{1,2,3}: criaa as pastas teste1, teste 2 e teste 3.
+
+	*[^abc] : para qualquer coisa exceto abc
+	*[a-zA-Z]: qualquer letra não importando se a ou A.
+
+	pode-se misturar os 4 tipos de coringa
+
+remover diretório:
+	rm -rf
+
+//------------------------------------
+gnome-open file2open.xxx 
+faz com o que o sistema abra 'file2open.xxx' com o aplicativo padrao para a tarefa.
+ex: usar para abrir pdf e tals 
+
+//------------------------------------
+PATH=$PATH:~/.MyLibries
+adiciona o diretório '.MyLibries' aos caminhos de PATH
+
+//---------------------------------
+rodar programa em background(deixando o terminal livre):
+     programa&
+
+//---------------------------------
+baixar um site:
+ installe o HTTrack com
+		pelo site deles
+ rode o programa.
+	-lebre de configurar o nível de descida para que você não acabe baixando a internet
+	inteira
+	
+//---------------------------------
+
+	-Os comandos podem ser executados em seqüência (um após o término do outro) se os sepa-
+rarmos com “;”. Por exemplo: echo primeiro;echo segundo;echo terceiro
+
+	-Para iniciar um programa em primeiro plano, basta digitar seu nome normalmente. Para
+iniciar um programa em segundo plano, acrescente o caracter “&” após o final do comando.
+
+	-Algumas vezes é útil ver quais processos estão sendo executados no computador. O comando
+ps faz isto, e também nos mostra qual usuário executou o programa, hora que o processo foi
+iniciado, etc.
+ps [opções]
+
+	-top é um programa que continua em execução mostrando continuamente os processos que
+estão rodando em seu computador e os recursos utilizados por eles. Para sair do top, pressione
+a tecla q.
+
+//---------------------------------
+
+	-Para cancelar a execução de algum processo rodando em primeiro plano, basta pres-
+sionar as teclas CTRL+C. A execução do programa será cancelada e será mostrado o aviso de
+comando. Você também pode usar o comando ‘kill’ on page 114 para interromper um processo
+sendo executado.
+
+	-Para parar a execução de um processo rodando em primeiro plano, basta pressionar as teclas
+CTRL+Z. O programa em execução será pausado e será mostrado o número de seu job e o aviso
+de comando.
+
+	-Para retornar a execução de um comando pausado, use ‘fg’ on the current page ou ‘bg’ on this
+page.
+
+//---------------------------------
+
+Configura a prioridade da execução de um comando/programa.
+nice [opções] [comando/programa]
+Onde:
+comando/programa Comando/programa que terá sua prioridade ajustada.
+opções
+-n [numero ] Configura a prioridade que o programa será executado. Se um programa for
+executado com maior prioridade, ele usará mais recursos do sistema para seu proces-
+samento, caso tenha uma prioridade baixa, ele permitirá que outros programas tenham
+preferência. A prioridade de execução de um programa/comando pode ser ajustada de -20
+(a mais alta) até 19 (a mais baixa).
+//---------------------------------
+	DEFINE PROGRAMAR A SEREM INICIADOS QUANDO O SISTEMA É INICIADO
+adicione o script desejado nesse arquivo:
+				/etc/rc.local
+
+

@@ -8,6 +8,9 @@ copiar arquivos:
 mover:
 	mv origem destino
 //-----------------------------------
+renomear:
+	mv nome_0 nome_novo
+//-----------------------------------
 remover:
 	rm 
 		-*.eps : para remover todos os .eps da pasta
@@ -63,7 +66,8 @@ para exibir arquivos escondidos em uma pasta: ctrl + h
 
 //-----------------------------------
 
-para criar pastas e arquivos em lugares que incialmente não se pode: repita o comando antecedido de sudo [da permissão de adm]
+para criar pastas e arquivos em lugares que incialmente não se pode: 
+	repita o comando antecedido de sudo [da permissão de adm]
 
 //-----------------------------------
 
@@ -85,7 +89,7 @@ criando link entre arquivos:
 	como usar:
 		-coloque o programa em um diretorio qualquer
 		-use $PATH	 para descobrir os dirétórios aonde o terminal procura 
-		-saça ln -s /caminho/para/file /caminho/do/path/nome_do_programa
+		-faça ln -s /caminho/para/file /caminho/do/path/nome_do_programa
 		-em geral podemos usar: /usr/local/bin ou sbin...
 		-assim basta digitar nome_do_programa para que ele abra em qq terminal
 		
@@ -203,5 +207,12 @@ preferência. A prioridade de execução de um programa/comando pode ser ajustad
 	DEFINE PROGRAMAR A SEREM INICIADOS QUANDO O SISTEMA É INICIADO
 adicione o script desejado nesse arquivo:
 				/etc/rc.local
+	*pelos menos aqui nao funcionou
+	
+//------------------------
+SETANDO PROGRAMAS PARA ABRIREM EM DETERMINADA WORKSPACE
+http://www.n00bsonubuntu.net/content/how-to-use-place-windows-compiz-plugin-on-ubuntu-11-04-natty-narwhal/
+
+basicamente instale o CCSM(algo como compiz-config-setting-manager) e configure
 
 

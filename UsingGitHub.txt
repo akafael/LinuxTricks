@@ -39,5 +39,9 @@ criando o repositoria (1ª)
 
 -git push origin master
 
-
+-deletando arquivos do repositório
+	git rm file.filetype
+	git commit -m 'removendo arquivo'
+	git push origins master
+ 
 

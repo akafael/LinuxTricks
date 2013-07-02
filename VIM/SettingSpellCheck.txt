@@ -1,0 +1,5 @@
+No arquivo vimrc digite:
+
+set global spell spelllang=pt
+
+set spell 

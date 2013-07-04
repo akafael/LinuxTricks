@@ -1,0 +1,48 @@
+<KTouchLecture>
+ <Title>Portuguese Text</Title>
+ <Comment>Texto com vários pangramas.</Comment>
+ <FontSuggestions>Monospace</FontSuggestions>
+ <Levels>
+  <Level>
+   <NewCharacters>letras especiais(ç, á, é...)</NewCharacters>
+   <Line>Juiz faz com que whisky de malte baixe logo preço de venda.</Line>
+   <Line>Zebras caolhas de Java querem mandar fax para moça gigante de New York.</Line>
+   <Line>Pangramas à beça jazem no sótão da memória-dervixe do faquir helênico.</Line>
+   <Line>João: "Vá às favas, judas, zerê caquético!"; Noé: "Eu? -Vá você, pinguço, linguinha, xibimba!".</Line>
+   <Line>Luís argüia à Júlia que &lt;brações, fé, chá, óxido, pôr, zângão> eram palavras do português.</Line>
+   <Line>A famosa Kelly comeu pão infectado com arroz que Barriga jantou vendo o filme da Wermatch xexelenta.</Line>
+   <Line>À noite, vovô Kowalsky vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz.</Line>
+  </Level>
+  <Level>
+   <NewCharacters>1º Texto</NewCharacters>
+   <Line>O Rio Grande do Norte é isso: sal, sol, nordeste.</Line>
+   <Line>Barreira do Inferno, viagens espaciais, industrialização. Algodão do Seridó, salinas de Mossoró e miragens.</Line>
+   <Line>Luta contra a seca, praias de areias coloridas, céu limpo.</Line>
+   <Line>O último forte do folclore brasileiro, a melhor carne-de-sol do Brasil.</Line>
+   <Line>O litoral potiguar tem um céu limpo todo o ano, ventos fracos e regulares, chuvas rápidas.</Line>
+   <Line>Saindo das cidades do litoral começa a surgir a imagem do sertão nordestino: as caatingas arbóreas desaparecidas pelas derrubadas acima do recomendável, a terra seca, vestígios da existência das florestas que nunca foram grandes.</Line>
+   <Line>Escassez de chuvas e secas periódicas.</Line>
+   <Line>No interior, os grandes problemas estão concentrados nas deficiências em termos de transporte, água, saúde pública, centros de treinamentos, energia e mão-de-obra.</Line>
+   <Line>Há falta de capital para gerar indústrias.</Line>
+   <Line>O subsolo é riquíssimo.</Line>
+  </Level>
+  <Level>
+   <NewCharacters>2º Texto</NewCharacters>
+   <Line>A datilografia é hoje encarada como um complemento cultural e técnico, indispensável a qualquer indivíduo, seja estudante, professor, comerciante, médico ou advogado.</Line>
+   <Line>Caracterizado pela exigüidade de tempo e excesso de trabalho, a vida moderna tornou a escrita à máquina uma exigência insubstituível.</Line>
+   <Line>A máquina de escrever venceu em todos os setores de trabalho, e, para que se possa usufruir de todo o proveito que ela nos oferece, é necessário saber escrever com os dez dedos, conhecer a nomenclatura assim como as funções e utilidades de suas principais peças.</Line>
+   <Line>Como diz o velho ditado: “O saber não ocupa lugar”. Saiba você, também, escrever à máquina com rapidez e perfeição, mas não estude sem mestre, pois método e mestre são indispensáveis na formação de um bom datilógrafo.</Line>
+  </Level>
+  <Level>
+   <NewCharacters>3º Texto</NewCharacters>
+   <Line>Era um dia um velho chamado Zusa, que trabalhava pelo ofício de carapina. A sua oficina era um brinco, sempre asseada, a ferramenta muito limpa, tudo nos seus lugares. </Line>
+   <Line>Mas a mania do velho era batizar cada ferramenta com um nome apropriado. O martelo chamava-se toc-toc, o formão, rompe-ferro, o serrote, vaivém. </Line>
+   <Line>Quando um carapina do lugar precisava de uma, corria logo à oficina do Zusa, a pedir-lhe de empréstimo. </Line>
+   <Line>Mas, tantas lhe fizeram, demorando a entrega ou ficando com as ferramentas, algumas vezes, que o velho resolveu parar com os empréstimos. </Line>
+   <Line> Certo dia foi à oficina um menino, de mando do pai, e disse: </Line>
+   <Line>Papai manda-lhe muitas lembranças e também pedir-lhe emprestado o vaivém. </Line>
+   <Line>Mestre Zusa pôs as cangalhas no nariz e respondeu: </Line>
+   <Line>- Menino, volta e diz a teu pai que se vaivém fosse e viesse, vaivém ia, mas como vaivém vai e não vem, vaivém não vai.</Line>
+  </Level>
+ </Levels>
+</KTouchLecture>

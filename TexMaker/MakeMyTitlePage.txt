@@ -1,0 +1,11 @@
+\MakeMyTitlePage{Materia}{subtitulo}{título}
+{
+	\begin{center} \large
+		\begin{tabular}{llr} \
+		& & \\[0.05cm]		
+		Professora & Nadia Maria de Liz Koche & \\
+		
+		Alunos:& & \\
+		\end{tabular}
+	\end{center}
+}

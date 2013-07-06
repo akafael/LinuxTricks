@@ -216,3 +216,10 @@ http://www.n00bsonubuntu.net/content/how-to-use-place-windows-compiz-plugin-on-u
 basicamente instale o CCSM(algo como compiz-config-setting-manager) e configure
 
 
+-------------------------------------------
+O comando wich program
+diz aonda o programa está instalado
+-na vdd acho que informa daonde o link está sendo lido.
+
+o comando 'find -name procura'
+

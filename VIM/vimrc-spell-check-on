@@ -1,0 +1,12 @@
+
+
+setlocal spell spelllang=pt
+
+
+" seta o spell check para portgues como padão
+
+" English
+:nmap <F5> :setlocal spell! spelllang=en<cr>
+" Brazilian Portuguese
+:nmap <F6> :setlocal spell! spelllang=pt<cr>
+

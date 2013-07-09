@@ -1,0 +1,12 @@
+O matlab pode ser usado para calcular a transformada inversa
+de Laplace.
+
+Para isso são necessários dois comandos:
+
+syms s t
+*declara s e t como variáveis literais para a áreia de
+trabalho
+
+ilaplace funçao
+
+

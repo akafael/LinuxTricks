@@ -120,12 +120,12 @@ comentários
 ----------------------------------------------------------
 
 ngspice supports comments that begin with single characters ’;’ or double characters ’$ ’ or ’//’
-or ’- -’.
+or ’--’.
 ----------------------------------------------------------
 --------------------------sub-circuitos-------------------
 ----------------------------------------------------------
 Example:
-* The following is the instance card :
+* The following is the instance card:
 *
 xdiv1 10 7 0 vdivide
 * The following are the subcircuit definition cards :
@@ -144,7 +144,7 @@ node “0”.
 			nós gloabais 
 ----------------------------------------------------------
 Examples:
-. GLOBAL gnd v c c
+.GLOBAL gnd vcc
 Nodes defined in the .GLOBAL statement are available to all circuit and subcircuit blocks inde-
 pendently from any circuit hierarchy.
 ----------------------------------------------------------
@@ -152,23 +152,23 @@ pendently from any circuit hierarchy.
 ----------------------------------------------------------
 
 General form:
-. INCLUDE f i l e n a m e
+.INCLUDE filename
 Examples:
-. INCLUDE / u s e r s / s p i c e / common / bsim3−param . mod
+.INCLUDE /users/spice/common/bsim3−param.mod
 
 
 ----------------------------------------------------------
 			PARÂMETROS
 ----------------------------------------------------------
 
-. param < i d e n t > = < e x p r >
- < i d e n t > = <expr > . . . .
+.param<ident>=<expr>
+ <ident>=<expr>....
 Examples:
-. param pippo = 5
-. param po = 6 pp = 7.8 pap ={AGAUSS( pippo,1,1.67)}
-. param pippp= {pippo+pp}
-. param p ={pp}
-. param pop = ’pp+p’
+.param pippo = 5
+.param po = 6 pp = 7.8 pap ={AGAUSS( pippo,1,1.67)}
+.param pippp= {pippo+pp}
+.param p ={pp}
+.param pop = ’pp+p’
 This line assigns numerical values to identifiers. More than one assignment per line is possible
 using a space as separator. Parameter identifier names must begin with an alphabetic character.
 The other characters must be either alphabetic, a number, or ! # $ % [ ] _ as special charac-
@@ -182,23 +182,7 @@ alternatively into single quotes ’AGAUSS(pippo, 1, 1.67)’.
 All subcircuit and model names are considered global and must be unique
 The .param symbols
 that are defined outside of any “.subckt” ... “.ends” section are global.
-----------------------------------------------------------
-			sufixos
-----------------------------------------------------------
-Letters immediately following a number that are not scale factors are ignored, and letters im-
-mediately following a scale factor are ignored. Hence, 10, 10V, 10Volts, and 10Hz all represent
-the same number, and M, MA, MSec, and MMhos all represent the same scale factor.
 
-
-suffix	value
-g 	e9
-meg	e6
-k	e3
-m	e-3
-u	e-6
-n	e-9
-p	e-12
-f	e-15
 
 ----------------------------------------------------------
 			FUNÇÃO
@@ -207,10 +191,10 @@ f	e-15
 With this line a function may be defined. The syntax of its expression is equivalent to the
 expression syntax from the .param line (2.8.5).
 General form:
-. func < i d e n t > { <expr > }
+.func <ident>{<expr>}
 Examples:
-. f u n c i c o s ( x ) { c o s ( x ) − 1}
-. func f ( x , y ) {x*y}
+.func icos(x){cos(x)−1}
+.func f(x,y){x*y}
 2.10. .CSPARAM
  59
 .func will initiate a replacement operation. After reading the input files, and before parameters
@@ -287,49 +271,7 @@ VCARRIER 1 0 DISTOF1 0 . 1 −90.0
 VMODULATOR 2 0 DISTOF2 0 . 0 1
 I I N 1 1 5 AC 1 DISTOF1 DISTOF2 0 . 0 0 1
 
-----------------------------------------------------------
-rodando o ngspice
-----------------------------------------------------------
-chame ngspice em terminal
 
-com o programa rodando:
--source file
-	da load na netlist
--listing
-	lista o que foi lido
--run
-	rodas os comandos
-plot v(1)
-	plota o dado v(1)
-print v(1) >> file.dat
-	imprime os dados em file.dat
-print db(v(1))
 
-----------------------------------------------------------
-formas de onda
-----------------------------------------------------------
 
-pulso:
-General form:
-PULSE ( V1 V2 TD TR TF PW PER )
-potencial baixo, alto, delay time, risetime, fall time, pulsw with perioso
-Examples:
-VIN 3 0 PULSE(−1 1 2NS 2NS 2NS 50NS 100NS )
-
-seno:
-General form:
-SIN (VO VA FREQ TD THETA)
-Examples:
-VIN 3 0 SIN ( 0 1 100MEG 1NS 1E10 )
-
-----------------------------------------------------------
-Análise transiente e de frequencia
-----------------------------------------------------------
-análise transiente
-tran dx end
-incremento e tempo final
-
-análise ac(variando a frequencia)
- ac ( DEC | OCT | LIN ) N FStart FEnd. 
- 
 

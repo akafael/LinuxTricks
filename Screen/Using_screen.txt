@@ -6,6 +6,13 @@ para configurar os sreem modifique o arquivo .screenrc na pasta home
 
 alguns comandos básicos:
 
+
+-da primeira vez que rodar digite:
+	tset
+	para configurar o terminal(não sei bem
+	se no próprio screen ou se no bash comum)
+	(não se se tem diferença) 
+
 -abrir nova janela e mudar para ela
 	ctrl a + c
 -abrindo uma janela com determinado programa:
@@ -14,3 +21,10 @@ alguns comandos básicos:
  
 -Para uma visualização rápida de uma lista de comandos digite :
 	ctrl a + ?		
+
+-para mudar de janela:
+	^a + a : muda de janela
+	digite ^a + w: para listar as janelas abertas
+	digite: ^a número: para mudar para a janela desejada
+	^a ' : (aspa simples) seleciona a tela para o qual mudar
+

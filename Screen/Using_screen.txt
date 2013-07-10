@@ -1,0 +1,16 @@
+Screen é um programa para gerenciar terminais:
+
+os comandos iniciam-se sempre com 'ctrl+a':
+
+para configurar os sreem modifique o arquivo .screenrc na pasta home
+
+alguns comandos básicos:
+
+-abrir nova janela e mudar para ela
+	ctrl a + c
+-abrindo uma janela com determinado programa:
+	dentro de uma janela scren digite:
+		screen programa
+ 
+-Para uma visualização rápida de uma lista de comandos digite :
+	ctrl a + ?		

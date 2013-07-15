@@ -1,0 +1,25 @@
+Usando os latex-vim depois de instalado:
+
+	-templates:
+		digite:'TTemplate' para uma lista destes
+		Você pode adicionar seus próprios templates
+        adicionando-os em a: 
+            $VIM/ftplugin/latex-suite/templates/            
+            
+    - uma série da macros estão definidas no latex-suite
+    *alguns deles irão conflitar com o português
+    *por exemplo, por default não consigo usar  'é' em um
+    arquivo .tex pois ele acha que essas teclas são um
+    comando para citação. Por isso pode ser necessário
+    remapear essas teclas. Isso é feito usando o comando:
+        call IMAP('`w', '\omega', 'tex')  
+
+        por exempo para mapear w para omega nos arquivos
+        .tex
+
+    *esse comando deve ser colocado no arquivo:
+        ~/.vim/after/ftplugin/tex_macros.vim
+    aqui colocar nesse arquivo não funcionou
+
+
+

@@ -11,15 +11,15 @@ Usando os latex-vim depois de instalado:
     *por exemplo, por default não consigo usar  'é' em um
     arquivo .tex pois ele acha que essas teclas são um
     comando para citação. Por isso pode ser necessário
-    remapear essas teclas. Isso é feito usando o comando:
-        call IMAP('`w', '\omega', 'tex')  
-
-        por exempo para mapear w para omega nos arquivos
-        .tex
-
-    *esse comando deve ser colocado no arquivo:
-        ~/.vim/after/ftplugin/tex_macros.vim
-    aqui colocar nesse arquivo não funcionou
+    remapear essas teclas.
+    *no vimrc que está nessa pasta isso foi feito
+    meio que numa gambiarra
 
 
+    -autocompletando:
+        digite por exemplo:
+                \ref{fig:
+        aperte C-n para ver uma lista das labels com fig:
+    !ultra útil!
 
+    
